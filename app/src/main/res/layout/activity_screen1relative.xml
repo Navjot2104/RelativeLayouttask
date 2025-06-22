@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/travimg"
+    tools:context=".screen1relative">
+
+    <TextView
+        android:id="@+id/txt37"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:gravity="center"
+        android:text="VISIT"
+        android:textColor="#093E47"
+        android:textSize="78dp"
+        android:textStyle="italic" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/txt37">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="With US!!"
+            android:textColor="#093E47"
+            android:textSize="32dp"
+            android:layout_marginLeft="120dp"/>
+
+    <Button
+        android:id="@+id/button45"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#A7C7DB"
+        android:text="Next"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
+</RelativeLayout>
+
+
+</RelativeLayout>

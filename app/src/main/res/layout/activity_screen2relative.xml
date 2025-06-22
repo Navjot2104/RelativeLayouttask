@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ss2"
+    tools:context=".screen2relative"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    >
+
+
+    <Button
+        android:id="@+id/buttonn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#5A67B3"
+        android:layout_centerHorizontal="true"
+        android:text="Log in"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/buttonn"
+    android:layout_centerHorizontal="true">
+    <Button
+        android:id="@+id/btsign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#5A70AB"
+        android:text="Sign up"
+        android:textStyle="bold"
+        />
+</RelativeLayout>
+
+</RelativeLayout>

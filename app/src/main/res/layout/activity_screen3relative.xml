@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen3relative"
+    android:background="@drawable/ss3">
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="14dp"
+        android:paddingTop="150dp"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+    <ImageView
+        android:id="@+id/imgg"
+        android:layout_below="@id/log"
+        android:layout_width="67dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@drawable/userimg" />
+        <EditText
+            android:id="@+id/userid"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/log"
+            android:layout_toRightOf="@id/imgg"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bggrad"
+            android:hint="Username"
+            android:padding="15dp"
+            android:textColor="#070000"
+            android:textColorHint="#090000" />
+
+        <ImageView
+            android:id="@+id/imghh"
+            android:layout_width="67dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/passimg" />
+
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="303dp"
+        android:layout_height="66dp"
+        android:layout_below="@id/userid"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="340dp"
+        android:layout_toRightOf="@id/imgg"
+        android:background="@drawable/bggrad"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="#070000"
+        android:textColorHint="#0B0000" />
+        <Button
+            android:id="@+id/buttondn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="250dp"
+            android:layout_marginLeft="34dp"
+            android:backgroundTint="#B4E2E9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="150dp"
+            android:text="Need Help?"
+            android:layout_toRightOf="@id/buttondn"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="260dp"
+            android:textColor="#FBFCFD"
+            android:textSize="23dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Sign up"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/buttondn"
+        android:layout_marginBottom="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+</RelativeLayout>

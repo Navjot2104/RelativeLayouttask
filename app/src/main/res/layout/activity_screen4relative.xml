@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen4relative"
+    android:background="@drawable/ss4">
+
+    <TextView
+        android:id="@+id/sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="50dp"
+        android:text="Sign up"
+        android:textColor="#ffffff"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        />
+
+
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_below="@id/sign"
+            android:layout_width="60dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="30dp"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/userimg" />
+
+    <EditText
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/backgrd"
+        android:hint="Username"
+        android:padding="15dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+
+
+    <ImageView
+        android:id="@+id/image89"
+        android:layout_width="60dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/image2"
+        app:srcCompat="@drawable/passimg" />
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image2"
+            android:hint="Password"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="30dp"
+            android:padding="15dp"
+            android:inputType="textPassword"
+            android:background="@drawable/backgrd"
+            />
+
+    <ImageView
+        android:id="@+id/img15"
+        android:layout_width="62dp"
+        android:layout_height="58dp"
+        android:layout_below="@id/image89"
+        app:srcCompat="@drawable/phnimg"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image89"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/backgrd"
+        android:hint="Enter your number"
+        android:inputType="number"
+        android:padding="15dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/img15"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/mailimg" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:layout_below="@id/img15"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="30dp"
+            android:padding="15dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/backgrd"
+            />
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_below="@id/email"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="---------OR----------"
+        android:layout_below="@id/done"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        />
+
+
+    
+
+</RelativeLayout>
