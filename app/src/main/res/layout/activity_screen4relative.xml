@@ -32,11 +32,12 @@
             app:srcCompat="@drawable/userimg" />
 
     <EditText
-        android:layout_width="299dp"
+        android:layout_width="331dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/sign"
         android:layout_marginLeft="80dp"
         android:layout_marginTop="40dp"
+        android:layout_marginRight="39dp"
         android:background="@drawable/backgrd"
         android:hint="Username"
         android:padding="15dp"
@@ -80,7 +81,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/image89"
         android:layout_marginLeft="80dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/backgrd"
         android:hint="Enter your number"
