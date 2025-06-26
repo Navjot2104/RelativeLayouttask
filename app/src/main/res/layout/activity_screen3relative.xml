@@ -30,6 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_below="@id/log"
+            android:layout_marginRight="30dp"
             android:layout_toRightOf="@id/imgg"
             android:layout_marginTop="40dp"
             android:background="@drawable/bggrad"
@@ -47,8 +48,8 @@
 
     <EditText
         android:id="@+id/pass"
-        android:layout_width="303dp"
-        android:layout_height="66dp"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
         android:layout_below="@id/userid"
         android:layout_marginLeft="11dp"
         android:layout_marginTop="40dp"
