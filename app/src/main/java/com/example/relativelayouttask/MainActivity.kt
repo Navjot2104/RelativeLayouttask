@@ -11,6 +11,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     var btn:Button?=null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -24,6 +25,10 @@ class MainActivity : AppCompatActivity() {
         btn?.setOnClickListener {
             Toast.makeText(this, "next", Toast.LENGTH_SHORT).show()
             var intent = Intent(this,screen1relative::class.java)
+            startActivity(intent)
+        }
+        findViewById<Button>(R.id.recycleradap).setOnClickListener {
+            var intent=Intent(this,RecyclerActivity::class.java).putExtra("data","My data")
             startActivity(intent)
         }
     }
