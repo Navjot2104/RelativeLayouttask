@@ -25,6 +25,7 @@
         android:text="Email"
         android:layout_marginTop="10dp"/>
     <Button
+        android:id="@+id/btn123"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Update"
@@ -32,6 +33,7 @@
         app:layout_constraintStart_toStartOf="@id/text3"
         android:layout_marginTop="10dp" />
     <Button
+        android:id="@+id/btn234"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Delete"
