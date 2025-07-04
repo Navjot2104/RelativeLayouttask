@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Recycler
 
-class RecyclerAdapter (var list:ArrayList<recycledataclass>)
+class RecyclerAdapter (var list:ArrayList<recycledataclass>,var onClick: OnClick)
     :RecyclerView.Adapter<RecyclerAdapter.Viewholder>(){
     class Viewholder (var view: View):RecyclerView.ViewHolder(view) {
         var name=view.findViewById<TextView>(R.id.txxtt)
@@ -26,22 +26,23 @@ class RecyclerAdapter (var list:ArrayList<recycledataclass>)
     override fun getItemCount(): Int {
         return list.size
     }
-    interface OnClick{
-        fun update(position: Int)
-        fun delete(position: Int)
-    }
+
 
     override fun onBindViewHolder(holder: RecyclerAdapter.Viewholder, position: Int) {
         holder.apply {
             name.setText(list[position].name)
             update.setOnClickListener {
-                clickInterface.update(position)
+                onClick.update(position)
             }
-        }
-        delete.setOnClickListener{
-            clickInterface.delete(position)
+
+            delete.setOnClickListener {
+                onClick.delete(position)
+            }
         }
     }
 
-
+}
+interface OnClick{
+    fun update(position: Int)
+    fun delete(position: Int)
 }
