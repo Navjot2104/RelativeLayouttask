@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.relativelayouttask.databinding.ActivityMainBinding
 import com.example.relativelayouttask.databinding.RecyclerBinding
 
-class RecyclerActivity : AppCompatActivity() {
+class RecyclerActivity : AppCompatActivity(),OnClick {
     lateinit var binding: RecyclerBinding
     lateinit var recyclerAdapter: RecyclerAdapter
     var Datalist= arrayListOf<recycledataclass>()
@@ -23,13 +23,21 @@ class RecyclerActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        Datalist.add(recycledataclass(title="My title",description="My description"))
-        Datalist.add(recycledataclass(title="My title",description="MY description"))
-        Datalist.add(recycledataclass(title="My title",description="MY description"))
-recyclerAdapter=RecyclerAdapter(Datalist)
-        binding.recycler.layoutManager=LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
-        binding.recycler.adapter=recyclerAdapter
+        Datalist.add(recycledataclass(name = "My title", number = 2345))
+        Datalist.add(recycledataclass(name ="My title", number = 5668))
+        Datalist.add(recycledataclass("My title", number = 89002))
+        recyclerAdapter=RecyclerAdapter(Datalist,this)
+        binding.listview.layoutManager=LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
+        binding.listview.adapter=recyclerAdapter
         recyclerAdapter.notifyDataSetChanged()
 
+    }
+
+    override fun update(position: Int) {
+        TODO("Not yet implemented")
+    }
+
+    override fun delete(position: Int) {
+        TODO("Not yet implemented")
     }
 }
