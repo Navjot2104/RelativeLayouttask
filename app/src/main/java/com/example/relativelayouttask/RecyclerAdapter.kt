@@ -38,6 +38,9 @@ class RecyclerAdapter (var list:ArrayList<recycledataclass>,var onClick: OnClick
             delete.setOnClickListener {
                 onClick.delete(position)
             }
+            view.setOnClickListener {
+                onClick.onItemClick(position)
+            }
         }
     }
 
@@ -45,4 +48,6 @@ class RecyclerAdapter (var list:ArrayList<recycledataclass>,var onClick: OnClick
 interface OnClick{
     fun update(position: Int)
     fun delete(position: Int)
+    //click on particular item
+    fun onItemClick(position: Int)
 }
