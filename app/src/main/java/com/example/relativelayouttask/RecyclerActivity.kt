@@ -1,5 +1,6 @@
 package com.example.relativelayouttask
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -34,10 +35,17 @@ class RecyclerActivity : AppCompatActivity(),OnClick {
     }
 
     override fun update(position: Int) {
-        TODO("Not yet implemented")
     }
 
     override fun delete(position: Int) {
-        TODO("Not yet implemented")
+
+    }
+
+    override fun onItemClick(position: Int) {
+        var intent=Intent(this,screen4relative::class.java).apply {
+            putExtra("key",Datalist[position].name)
+            putExtra("number",Datalist[position].number)
+        }
+startActivity(intent)
     }
 }
