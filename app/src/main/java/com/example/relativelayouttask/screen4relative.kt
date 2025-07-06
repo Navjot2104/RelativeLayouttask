@@ -1,6 +1,7 @@
 package com.example.relativelayouttask
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +17,9 @@ class screen4relative : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        var name=intent.getStringExtra("key")
+        var number=intent.getIntExtra("number",0)
+        Toast.makeText(this,"$name $number" , Toast.LENGTH_SHORT).show()
+
     }
 }
